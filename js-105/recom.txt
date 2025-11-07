@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<section id="recommendations">
+  <h2>Recommendations</h2>
+  <div>Mohan is a quick learner and delivers quality work consistently.</div>
+  <div>He is highly skilled in hardware and software integration projects.</div>
+  <div>His problem-solving skills and creativity make him an excellent teammate.</div>
+</section>
+</body>
+</html>

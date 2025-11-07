@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<section id="recommendations">
+  <h2>Recommendations</h2>
+  <div id="list">
+    <div>Great learner and consistent performer.</div>
+  </div>
+  <textarea id="newRec"></textarea>
+  <button onclick="addRecommendation()">Submit</button>
+</section>
+<script>
+function addRecommendation(){
+  let rec = document.getElementById('newRec').value;
+  let div = document.createElement('div');
+  div.textContent = rec;
+  document.getElementById('list').appendChild(div);
+}
+</script>
+</body>
+</html>

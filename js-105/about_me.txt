@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+<section id="about">
+  <h2>About Me</h2>
+  <img src="images/profile.jpg" alt="Profile" width="150">
+  <p>Hello! I am Bondala Pati Tarun, passionate about technology, coding, and building creative projects.</p>
+</section>
+</body>
+</html>

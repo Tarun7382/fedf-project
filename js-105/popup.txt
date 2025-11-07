@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<section id="recommendations">
+  <textarea id="newRec"></textarea>
+  <button onclick="addRecommendation()">Submit</button>
+</section>
+<script>
+function addRecommendation(){
+  alert("Thank you for leaving a recommendation!");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav ul {list-style:none;display:flex;}
+nav ul li {margin:0 15px;}
+nav ul li a {color:black;text-decoration:none;}
+nav ul li a:hover {font-weight:bold;text-decoration:underline;}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Project details</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#recommendations">Recommendations</a></li>
+</ul>
+</nav>
+</body>
+</html>

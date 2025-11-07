@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header>
+  <span class="home-icon">&#8962;</span> <!-- Home Icon --> 
+</header>
+</body>
+</html>

@@ -1,0 +1,289 @@
+/* ============================ */
+/* 🌐 GLOBAL STYLES */
+/* ============================ */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  overflow-x: hidden;
+}
+
+/* ============================ */
+/* 🏠 ROLE SELECTION PAGE */
+/* ============================ */
+.role-selection-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url('https://images.unsplash.com/photo-1579546929662-711aa81148cf?auto=format&fit=crop&w=1920&q=80')
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.role-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px;
+  text-align: center;
+}
+
+.role-header h1 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.role-header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.role-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.role-card {
+  background: #16181a;
+  border-radius: 15px;
+  padding: 25px;
+  width: 260px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 3px solid transparent;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.role-card:hover {
+  transform: translateY(-8px);
+  border-color: #3498db;
+}
+.role-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.citizen .role-icon { color: #3498db; }
+.politician .role-icon { color: #e74c3c; }
+.admin .role-icon { color: #f1c40f; }
+
+.role-card h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.role-card p {
+  color: #95a5a6;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+.select-btn {
+  background: #3498db;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.select-btn:hover {
+  background: #2c80b4;
+}
+
+/* Responsive adjustments for role page */
+@media (max-width: 768px) {
+  .role-container {
+    width: 95%;
+    padding: 20px;
+  }
+  .role-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .role-card {
+    width: 90%;
+  }
+}
+
+/* ============================ */
+/* 🔐 LOGIN PAGE */
+/* ============================ */
+.login-background {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1920&q=80')
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.login-header {
+  padding: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.citizen-header { background: #f1c40f; }
+.politician-header { background: #e74c3c; }
+.admin-header { background: #2980b9; }
+
+.login-body {
+  padding: 25px;
+}
+.login-body input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.btn-login {
+  width: 100%;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-login:hover {
+  background: #2980b9;
+}
+
+/* ============================ */
+/* 🧭 DASHBOARD PAGE */
+/* ============================ */
+.main-background {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f6f8;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.sidebar a:hover, .sidebar a.active {
+  background: #f39c12;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Dashboard area */
+.dashboard-content {
+  flex: 1;
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  overflow-y: auto;
+}
+
+/* Header */
+.dashboard-header {
+  background: linear-gradient(to right, #34495e, #2c3e50);
+  color: white;
+  padding: 20px 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Main Body */
+.dashboard-body {
+  padding: 25px 40px;
+  overflow-y: auto;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Sidebar */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+  .dashboard-content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .dashboard-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  .dashboard-header {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .dashboard-body {
+    padding: 15px;
+  }
+}

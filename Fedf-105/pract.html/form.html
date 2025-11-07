@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1{text-align: center;}
+        form{text-align: center;}
+    </style>
+</head>
+<body>
+    <img src="KL_University_logo.svg" alt="Google" height="100">
+    <form >
+        <h1>Registration form</h1>
+     <label for="name"></label>
+<input type="text" id="name" name="onlyChars" placeholder="Enter name" />
+
+<script>
+  document.getElementById("name").addEventListener("input", function () {
+    const original = this.value;
+    const lettersOnly = original.replace(/[^a-zA-Z]/g, '');
+
+    if (original !== lettersOnly) {
+      alert("❌ Only alphabets (A-Z, a-z) are allowed!");
+      this.value = lettersOnly;
+    }
+  });
+</script>
+
+        <br>
+        <br>
+        <input type="text" placeholder="Enter id" name="id" pattern="[0-9]{10}">
+        <br>
+        <br>
+        <input type="email" placeholder="enter mail id" name="email">
+        <br>
+        <br>
+        <input type="date">
+        <br>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

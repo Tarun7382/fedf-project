@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demo</title>
+</head>
+<body>
+    <h1>Array Demo in js</h1>
+    <p id="demo"></p>
+    <script>
+     let Animals=["elephant","zebra","Lion","cheetah","Horse"];
+    // document.getElementById("demo").innerHTML=Animals+"<\n>";
+    for(i=0;i<Animals.length;i++)
+    {
+        document.getElementById("demo").innerHTML+=Animals[i]+"<br/>";
+    }
+    Animals.push("kiwi");
+      document.getElementById("demo").innerHTML+="Array elements after adding "+"<br/>";
+      for(i=0;i<Animals.length;i++)
+      {
+         document.getElementById("demo").innerHTML+=Animals[i]+"<br/>"
+      }
+      Animals.pop();
+      document.getElementById("demo").innerHTML+="Array elements after deleting "+"<br/>";
+      for(i=0;i<Animals.length;i++)
+      {
+         document.getElementById("demo").innerHTML+=Animals[i]+"<br/>"
+      }
+      document.getElementById("demo").innerHTML+="Array elements using 'in' "+"<br/>";
+      for(let i in Animals)    
+      {
+        document.getElementById("demo").innerHTML+=Animals[i]+"<br/>";
+      }    
+       document.getElementById("demo").innerHTML+="Array elements using 'of' "+"<br/>";
+      for(let i of Animals)    
+      {
+        document.getElementById("demo").innerHTML+=i+"<br/>";
+      }    
+
+    </script>
+    
+    
+</body>
+</html>
